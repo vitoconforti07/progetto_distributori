@@ -1,0 +1,31 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    show-sql: true
+    spring.jpa.database: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prova
+    username: Prova
+    password: vito
+
+
+  hikari:
+     connection-timeout: 60000
+     maximum-pool-size: 15
+  h2:
+    console:
+      enabled: true
+
+
+#output to a temp_folder/file
+logging:
+  file:
+  path: "./logs"
+  name: "./logs/gestore-be.log"
+  # Logging pattern for the console
+  pattern:
+    console: "%-10(%d{HH:mm:ss.SSS} [%thread]) %-5level %logger{32} - %msg%n"
+  # Logging pattern for file
+    file: "%-10(%d{HH:mm:ss.SSS} [%thread]) %-5level %logger{32} - %msg%n"
+

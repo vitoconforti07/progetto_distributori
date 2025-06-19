@@ -1,0 +1,11 @@
+server:
+  port: 8081
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/Progetto_distributori_V_0.1?currentSchema=v_0_1
+#    username: Vito
+#    password: vito
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
